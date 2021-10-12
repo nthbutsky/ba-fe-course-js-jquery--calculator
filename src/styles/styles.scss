@@ -1,0 +1,72 @@
+@import '~normalize.css';
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+  background-color: hsl(154, 4%, 32%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.calc {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  height: 500px;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 0 20px black;
+  background-color: white;
+  padding: 20px;
+}
+
+.calc__screen {
+  margin: 0 auto;
+  width: 260px;
+  height: 100px;
+  border-radius: 6px;
+  background-color: hsl(154, 4%, 32%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-shadow: 0 0 5px hsl(154, 4%, 32%);
+}
+
+.btn,
+.op,
+.calc__eq {
+  margin: 5px 10px;
+  background-color: hsl(154, 4%, 32%);
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 5px hsl(154, 4%, 32%);
+  cursor: pointer;
+  line-height: 1;
+  transition: all 0.2s ease-in-out;
+}
+.btn:hover,
+.op:hover,
+.calc__eq:hover {
+  box-shadow: none;
+  background-color: white;
+  box-shadow: 0 0 5px hsl(154, 4%, 32%);
+  color: hsl(154, 4%, 32%);
+}
+.calc__mul {
+  padding-top: 10px;
+  box-sizing: border-box;
+}
+.calc__eq {
+  width: 260px;
+}
